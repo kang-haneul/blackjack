@@ -1,15 +1,15 @@
-# Project: Project1
+# Project: Project2
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = num_player.o players_num.o try1.o
-LINKOBJ  = num_player.o players_num.o try1.o
+OBJ      = main.o 10.o 11.o 12.o
+LINKOBJ  = main.o 10.o 11.o 12.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = Project1.exe
+BIN      = Project2.exe
 CXXFLAGS = $(CXXINCS) -g3
 CFLAGS   = $(INCS) -g3
 RM       = rm.exe -f
@@ -24,11 +24,14 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-num_player.o: num_player.c
-	$(CC) -c num_player.c -o num_player.o $(CFLAGS)
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS)
 
-players_num.o: players_num.c
-	$(CC) -c players_num.c -o players_num.o $(CFLAGS)
+10.o: 10.c
+	$(CC) -c 10.c -o 10.o $(CFLAGS)
 
-try1.o: try1.c
-	$(CC) -c try1.c -o try1.o $(CFLAGS)
+11.o: 11.c
+	$(CC) -c 11.c -o 11.o $(CFLAGS)
+
+12.o: 12.c
+	$(CC) -c 12.c -o 12.o $(CFLAGS)
