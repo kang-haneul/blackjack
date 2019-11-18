@@ -157,7 +157,7 @@ int checkWinner() {
 
 
 int main(int argc, char *argv[]) {
-	int roundIndex = 0;
+	int roundIndex = 0;----
 	int max_user;
 	int i;
 	
