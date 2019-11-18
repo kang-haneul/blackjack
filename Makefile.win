@@ -4,8 +4,8 @@
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = main.o 10.o 11.o 12.o
-LINKOBJ  = main.o 10.o 11.o 12.o
+OBJ      = main.o 10.o 11.o 12.o "calculate\ the\ card.o" "card\ arry.o" "player\ setting\ and\ betting.o" "card\ processing.o"
+LINKOBJ  = main.o 10.o 11.o 12.o "calculate the card.o" "card arry.o" "player setting and betting.o" "card processing.o"
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -35,3 +35,15 @@ main.o: main.c
 
 12.o: 12.c
 	$(CC) -c 12.c -o 12.o $(CFLAGS)
+
+"calculate\ the\ card.o": calculate\ the\ card.c
+	$(CC) -c "calculate the card.c" -o "calculate the card.o" $(CFLAGS)
+
+"card\ arry.o": card\ arry.c
+	$(CC) -c "card arry.c" -o "card arry.o" $(CFLAGS)
+
+"player\ setting\ and\ betting.o": player\ setting\ and\ betting.c
+	$(CC) -c "player setting and betting.c" -o "player setting and betting.o" $(CFLAGS)
+
+"card\ processing.o": card\ processing.c
+	$(CC) -c "card processing.c" -o "card processing.o" $(CFLAGS)
