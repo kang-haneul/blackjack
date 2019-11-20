@@ -1,8 +1,8 @@
-or( ; ; ) //무한 루프를 돌린다.
+for( ; ; ) //무한 루프를 돌린다.
 {
 int order; // order of go or stay
 
-printf(" > > > my turn!---------\n   -> card : &C &C");
+printf(" > > > my turn!---------\n   -> card : ");
 
 if(카드 숫자의 합이 21이다.)
 	{
