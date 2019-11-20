@@ -5,7 +5,7 @@ int getCardNum(int cardnum) {
 }
 
 //print the card information (e.g. DiaA)
-void printCard(int cardnum) {
+void printCard(int cardinformation) {
 	
 	int num =0;
 	
@@ -167,3 +167,4 @@ void printCard(int cardnum) {
 		
 
 }
+

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 #define N_CARDSET			1
 #define N_CARD				52
@@ -143,6 +144,8 @@ int main(int argc, char *argv[]) {
 	int roundIndex = 0;
 	int max_user;
 	int i;
+	int cardnum;
+	
 	
 	srand((unsigned)time(NULL));
 	
@@ -154,6 +157,9 @@ int main(int argc, char *argv[]) {
 	//1. players' dollar
 	
 	//2. card tray
+	
+	void printCard(cardnum);
+	
 	mixCardTray();
 
 
