@@ -6,12 +6,13 @@ int mixCardTray(void) {
 int i;
 int cardinformation;
 int allCardNum=52;
+int cardIndex[52];
 
-for(i=0;i<2;i++);
+for(i=0;i<52;i++);
 	cardinformation = 1+rand()%allCardNUM;
+	cardIndex[i]= void printCard();
 	
 	
-	return void printCard();
 }
 
 //get one card from the tray
