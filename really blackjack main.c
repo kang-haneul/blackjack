@@ -179,13 +179,13 @@ int main(int argc, char *argv[]) {
 		{
 			while ( gameend==0 ) //do until the player dies or player says stop
 			{
-				printCardInitialStatus(void); //print current card status printUserCardStatus();
+				printCardInitialStatus(); //print current card status printUserCardStatus();
 				calcStepResult( ); //check the card status ::: calcStepResult()
 				getAction ( ); //GO? STOP? ::: getAction()
 				
 				
 			
-				//check if the turn ends or not
+			 //check if the turn ends or not
 			}
 			
 			
