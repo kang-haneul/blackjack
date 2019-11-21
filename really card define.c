@@ -2,6 +2,41 @@
 
 //calculate the actual card number in the blackjack game
 int getCardNum(int cardnum) {
+	int n;
+	int real_figure;
+	printcard();
+	n = calcStepResult() ;
+	
+	if(n%13==1)
+		if(calcStepResult>20)
+			real_figure=11;
+		else
+			real_figure=1;
+	else if (n%13==2)
+		real_figure=2;
+	else if (n%13==3)
+			real_figure=3;
+	else if (n%13==4)
+		real_figure=4;
+	else if (n%13==5)
+		real_figure=5;
+	else if (n%13==6)
+		real_figure=6;
+	else if (n%13==7)
+		real_figure=7;
+	else if (n%13==8)
+		real_figure=8;
+	else if (n%13==9)
+		real_figure=9;
+	else if (n%13==10)
+		real_figure=10;
+	else if (n%13==11)
+		real_figure=10;
+	else if (n%13==12)
+		real_figure=10;
+	else if (n%13==0)
+		real_figure=10;
+			
 }
 
 //print the card information (e.g. DiaA)
