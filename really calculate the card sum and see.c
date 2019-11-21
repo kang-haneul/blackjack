@@ -41,6 +41,14 @@ int checkResult() {
 }
 
 
+int checkWinner()
+{
+	printf("------------------------------\n------------------------------\n------------------------------");
+	printf("game end! your money : $ ");
+	
+	return 0;
+	
+}
 
 
 

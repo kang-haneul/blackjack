@@ -1,23 +1,26 @@
 for( ; ; ) //무한 루프를 돌린다.
 {
 int order; // order of go or stay
+int sum_of_card;
+sum_of_card = 카드 숫자 합; 
+int n;
 
-printf(" > > > my turn!---------\n   -> card : ");
+printf(" > > > my turn!---------\n   -> card : ", 앞의 카드 보여주기);
 
-if(카드 숫자의 합이 21이다.)
+if(sum_of_card=21)
 	{
 		printf("     ::: Black Jack! Congratulation, you win!! ---> +$%d($%d)", 베팅금액*2,50-배팅금액+배팅금액*2);
 	}
 
-else if (카드 숫자 합이 21 초과다)
+else if (sum_of_card >21)
 	{
 		printf("     ::: DEAD (sum:%d) --> -$%d ($%d)",배정된 카드의 숫자 합, 잃은 달러, 보유 달러);
 	}
 
-else if(카드 숫자 합이 21보다 작다.)
+else if(sum_of_card<21)
 	{
 		printf("     ::: Action? ( 0 -go, others - stay)   :  ");
-		scanf("%d",&order);
+		n=getIntegerInput ();
 		
 		if(order==0)
 		{

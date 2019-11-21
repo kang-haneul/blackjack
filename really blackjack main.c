@@ -196,7 +196,7 @@ int main(int argc, char *argv[]) {
 		checkResult();
 	} while (gameEnd == 0);
 	
-	printf("------------------------------\n------------------------------\n------------------------------");
+	
 	checkWinner();
 	
 	
