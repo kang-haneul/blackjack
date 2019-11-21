@@ -26,7 +26,17 @@ else if(card[0]+card[1]<21)
 	
 
 int checkResult() {
+	int i;
+	int num_player;
+	num_player=configUser ();
 	
+	printf("your result : ");
+	for(i=0;i<num_player;i++)
+		{	
+		printf(" %d'th player's result : ",i=1);
+		}
+
+
 }
 
 int checkWinner() {
