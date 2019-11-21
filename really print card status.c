@@ -1,8 +1,5 @@
 //print initial card status
-void printCardInitialStatus(void) {
-	
-	
-}
+
 
 int getAction(void) {
 	int i;
@@ -10,12 +7,12 @@ int getAction(void) {
 	for( ; ; );
 		{
 			printf("Action? (0-go, others -stay)");
-				i= getIntegerInput(void);
+				i= getIntegerInput( );
 				if(i=0)
-					break;
+					return -1;
 					
 				else
-					continue;
+					return 1;
 					
 					
 		}
@@ -24,15 +21,7 @@ int getAction(void) {
 }
 
 
-void printUserCardStatus(int user, int cardcnt) {
-	int i;
-	
-	printf("   -> card : ");
-	for (i=0;i<cardcnt;i++)
-		printCard(cardhold[user][i]);
-	printf("\t ::: ");
-	
-}
+
 
 
 

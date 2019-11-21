@@ -10,8 +10,8 @@ int card[52];
 
 for(i=0;i<52;i++);
 	{
-	cardinformation = 1+rand()%allCardNUM;
-	card[i]= void printCard();
+	cardinformation = 1+rand()%allCardNum;
+	card[i]= printCard();
 	}	
 	
 	return 0;
