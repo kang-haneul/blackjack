@@ -177,27 +177,26 @@ int main(int argc, char *argv[]) {
 		//each player's turn
 		for (; ;) //each player
 		{
-			while ( gameend==0 ) //do until the player dies or player says stop
-			{
-				printCardInitialStatus(); //print current card status printUserCardStatus();
-				calcStepResult( ); //check the card status ::: calcStepResult()
-				getAction ( ); //GO? STOP? ::: getAction()
+			while (gameend==0) //do until the player dies or player says stop
+				{
+					printCardInitialStatus(); //print current card status printUserCardStatus();
+					calcStepResult( ); //check the card status ::: calcStepResult()
+					getAction ( ); //GO? STOP? ::: getAction()
 				
 				
 			
-			 //check if the turn ends or not
-			}
+				 //check if the turn ends or not
+				}
 			
+			roundIndex = roundIndex+2;
 			
 		}
 		
 			//result
 		checkResult();
-		
-		roundIndex = roundIndex+2;
-		
 	} while (gameEnd == 0);
 	
+	printf("------------------------------\n------------------------------\n------------------------------");
 	checkWinner();
 	
 	

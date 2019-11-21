@@ -29,16 +29,24 @@ int checkResult() {
 	int i;
 	int num_player;
 	num_player=configUser ();
+	int gameend=0;
 	
 	printf("your result : ");
 	for(i=0;i<num_player;i++)
 		{	
-		printf(" %d'th player's result : ",i=1);
+		printf(" %d'th player's result : ",i+1);
 		}
 
-
+	return gameend++;
 }
 
-int checkWinner() {
-	
-}
+
+
+
+
+
+
+
+
+
+

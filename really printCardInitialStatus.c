@@ -5,7 +5,7 @@ int printCardInitialStatus( ) //임의로 이미 배정된 카드를 보여주는 단계
 	int n; 
 	n=configUser ( );
 	int num_player;
-	int configuser [num_player+2];
+	int configuser [num_player+1];
 	n= offerCards();
 	
 printf("--------CARD OFFERING---------");
@@ -30,8 +30,6 @@ else if(configuser[4])
 else if(configuser[5])
 	printf(" ->you             : %s %s", n,n);
 	
-else if(configuser[6])
-	printf(" ->you             : %s %s", n,n);
 
 
 }
