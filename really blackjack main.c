@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
 	int max_user;
 	int i;
 	int cardnum;
-	
+	int sum_0f_card;
 	
 	srand((unsigned)time(NULL));
 	
@@ -167,6 +167,7 @@ int main(int argc, char *argv[]) {
 	//Game start --------
 	do {
 		
+		printf("--------------------------------\n------------ROUNG %d (cardindex:%d)-----------------\n-------------------------",roundIndex+1,cardIndex);
 		betDollar();
 		offerCards(); //1. give cards to all the players
 		
@@ -174,19 +175,25 @@ int main(int argc, char *argv[]) {
 		printf("\n------------------ GAME start --------------------------\n");
 		
 		//each player's turn
-		for () //each player
+		for (; ;) //each player
 		{
-			while () //do until the player dies or player says stop
+			while (sum_of_card<22 ) //do until the player dies or player says stop
 			{
-				//print current card status printUserCardStatus();
-				//check the card status ::: calcStepResult()
-				//GO? STOP? ::: getAction()
+				printCardInitialStatus(void); //print current card status printUserCardStatus();
+				calcStepResult( ); //check the card status ::: calcStepResult()
+				getAction ( ); //GO? STOP? ::: getAction()
+			
+				
+			
 				//check if the turn ends or not
 			}
 		}
 		
-		//result
+			//result
 		checkResult();
+		
+		roundIndex = roundIndex+2;
+		
 	} while (gameEnd == 0);
 	
 	checkWinner();

@@ -1,5 +1,6 @@
-/print initial card status
+//print initial card status
 void printCardInitialStatus(void) {
+	
 	
 }
 
@@ -30,6 +31,7 @@ void printUserCardStatus(int user, int cardcnt) {
 	for (i=0;i<cardcnt;i++)
 		printCard(cardhold[user][i]);
 	printf("\t ::: ");
+	
 }
 
 
