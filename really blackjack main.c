@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
 	int max_user;
 	int i;
 	int cardnum;
-	int sum_0f_card;
+	int gameend=0;
 	
 	srand((unsigned)time(NULL));
 	
@@ -177,16 +177,18 @@ int main(int argc, char *argv[]) {
 		//each player's turn
 		for (; ;) //each player
 		{
-			while (sum_of_card<22 ) //do until the player dies or player says stop
+			while ( gameend==0 ) //do until the player dies or player says stop
 			{
 				printCardInitialStatus(void); //print current card status printUserCardStatus();
 				calcStepResult( ); //check the card status ::: calcStepResult()
 				getAction ( ); //GO? STOP? ::: getAction()
-			
+				
 				
 			
 				//check if the turn ends or not
 			}
+			
+			
 		}
 		
 			//result
