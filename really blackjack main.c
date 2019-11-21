@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 #define N_CARDSET			1
 #define N_CARD				52
@@ -158,7 +159,7 @@ int main(int argc, char *argv[]) {
 	
 	//2. card tray
 	
-	void printCard(cardnum);
+	
 	
 	mixCardTray();
 

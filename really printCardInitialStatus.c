@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
 
 int printCardInitialStatus( ) //임의로 이미 배정된 카드를 보여주는 단계
 {

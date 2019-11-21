@@ -18,6 +18,3 @@ for(i=0;i<52;i++);
 	
 }
 
-//get one card from the tray
-int pullCard(void) {
-}

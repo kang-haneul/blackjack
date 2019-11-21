@@ -1,6 +1,6 @@
 int betDollar( )
 {
-t betting_Dollar;
+int betting_Dollar;
 printf("-----BETTING STEP-----\n");
 
 printf(" -> your betting (tatal:$50) : ");

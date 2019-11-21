@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <string.h>
+
 //card processing functions ---------------
 
 //calculate the actual card number in the blackjack game
@@ -8,10 +13,7 @@ int getCardNum(int cardnum) {
 	n = calcStepResult() ;
 	
 	if(n%13==1)
-		if(calcStepResult>20)
-			real_figure=11;
-		else
-			real_figure=1;
+		real_figure=1;
 	else if (n%13==2)
 		real_figure=2;
 	else if (n%13==3)
@@ -40,9 +42,11 @@ int getCardNum(int cardnum) {
 }
 
 //print the card information (e.g. DiaA)
-void printCard(int cardinformation) {
-	
-	int num =0;
+void printCard(int cardnum){
+	int num=0;
+
+	num=cardnum;
+
 	
 	if( num ==1)
 		printf("CLV A");
